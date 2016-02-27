@@ -11,6 +11,11 @@ describe('Item', () => {
     const component = renderIntoDocument(
         <Item pair={["Infiniti", "G35"]} />
     );
+    // const buttons = scryRenderedDOMComponentsWithTag(component, 'RaisedButton');
+
+    // expect(buttons.length).to.equal(2);
+    // expect(buttons[0].textContent).to.equal('Infiniti');
+    // expect(buttons[1].textContent).to.equal('G35');
   });
 
 });

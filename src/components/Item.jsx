@@ -1,4 +1,5 @@
 import React from 'react';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 export default React.createClass({
   getPair: function() {
@@ -7,9 +8,7 @@ export default React.createClass({
   render: function() {
     return <div className="item">
       {this.getPair().map(entry =>
-        <button key={entry}>
-          <h1>{entry}</h1>
-        </button>
+        <RaisedButton key={entry} label={entry}/>
       )}
     </div>;
   }
