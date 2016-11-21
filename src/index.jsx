@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Item from './components/Item';
 
@@ -10,6 +11,8 @@ injectTapEventPlugin();
 const pair = ['Infiniti', 'G35'];
 
 ReactDOM.render(
-  <Item pair = {pair} />,
+  <MuiThemeProvider>
+    <Item pair = {pair} />
+  </MuiThemeProvider>,
   document.getElementById('app')
 );
